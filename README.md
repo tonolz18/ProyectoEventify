@@ -1,66 +1,184 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Eventify
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Descripción del Proyecto
 
-## About Laravel
+Eventify es una plataforma en línea desarrollada en equipo que permite a los usuarios organizar y asistir a eventos. El sistema incluye la gestión de eventos, boletos, asistentes y comentarios. Es una solución completa que permite a los organizadores personalizar sus eventos y gestionar asistentes mientras que los usuarios pueden comprar boletos, dejar comentarios y puntuar eventos.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Equipo de Desarrollo
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Este proyecto lo desarrollamos en equipo por:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Antonio Garza Lozano**:
+    - Creación y diseño del backend.
+    - Implementación de la lógica de negocios y gestión de eventos.
+    - Desarrollo de los controladores y notificaciones.
 
-## Learning Laravel
+- **Cristian Romero Luna**:
+    - Diseño e integración del frontend.
+    - Configuración de las vistas para organizadores y usuarios.
+    - Implementación de validaciones y funcionalidad de compra de boletos.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Gael Muñoz Valle**:
+    - Configuración y gestión de la base de datos.
+    - Creación de migraciones, modelos y relaciones.
+    - Implementación de pruebas y corrección de errores.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Tecnologías que utlizamos
 
-## Laravel Sponsors
+- **Frontend**: Bootstrap, Tailwind CSS
+- **Backend**: Laravel 11
+- **Base de Datos**: MySQL
+- **Autenticación y Autorización**: Laravel Breeze
+- **Notificaciones**: Laravel Notifications
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Cómo Trabajamos el Proyecto
 
-### Premium Partners
+Este proyecto fue desarrollado en equipo siguiendo los siguientes pasos:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+1. **Planificación**:
+    - Definimos los requerimientos del sistema.
+    - Dividimos las tareas según las fortalezas de cada integrante del equipo.
 
-## Contributing
+2. **Desarrollo**:
+    - Cada integrante se encargó de diferentes módulos: gestión de eventos, compra de boletos, sistema de comentarios, etc.
+    - Utilizamos un repositorio de GitHub para coordinar el trabajo y realizar commits regulares.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+3. **Pruebas**:
+    - Realizamos pruebas manuales de cada módulo.
 
-## Code of Conduct
+4. **Entrega**:
+    - Preparamos un entorno limpio para el despliegue.
+    - Documentamos cómo configurar y ejecutar el proyecto.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Requisitos Previos
 
-## Security Vulnerabilities
+Para ejecutar este proyecto, necesitas lo siguiente:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- PHP 8.3 o superior
+- Composer
+- MySQL 8.x
+- Node.js y npm 
+- Git
 
-## License
+## Pasos para Ejecutar el Proyecto
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. **Clona el Repositorio**:
+   ```bash
+   git clone https://github.com/tu-usuario/Eventify.git
+   cd Eventify
+   ```
+
+2. **Configura el Entorno**:
+    - Crea un archivo `.env` basado en `.env.example`:
+      ```bash
+      cp .env.example .env
+      ```
+    - Configura la conexión a la base de datos en el archivo `.env`:
+      ```env
+      DB_DATABASE=tu_base_de_datos
+      DB_USERNAME=tu_usuario
+      DB_PASSWORD=tu_contraseña
+      ```
+
+3. **Instala las Dependencias**:
+   ```bash
+   composer install
+   npm install
+   npm run build
+   ```
+
+4. **Genera la Clave de la Aplicación**:
+   ```bash
+   php artisan key:generate
+   ```
+
+5. **Migra y Seed de la Base de Datos**:
+   ```bash
+   php artisan migrate --seed
+   ```
+
+6. **Arranca el Servidor**:
+   ```bash
+   php artisan serve
+   ```
+
+7. **Opcional**: Para enviar correos, asegúrate de configurar los detalles de tu servidor de correo en `.env`.
+
+## Exportar y Importar la Base de Datos
+
+Para compartir los datos de la base de datos:
+
+### Exportar
+1. En MySQL Workbench o terminal:
+   ```bash
+   mysqldump -u tu_usuario -p tu_base_de_datos > database.sql
+   ```
+
+2. Agrega el archivo al repositorio:
+   ```bash
+   mkdir database/dumps
+   mv database.sql database/dumps/
+   git add database/dumps/database.sql
+   git commit -m "Se agrega la base de datos"
+   git push origin main
+   ```
+
+### Importar
+1. Descarga el archivo `database.sql` del repositorio.
+2. Importa los datos:
+   ```bash
+   mysql -u tu_usuario -p tu_base_de_datos < database.sql
+   ```
+
+### Para ingresar como organizador puedes usar las siguientes credenciales:
+
+- Correo Electrónico: organizer@example.com
+- Contraseña: password123
+
+### Para ingresar como usuario o asistente puedes usar las siguientes credenciales:
+
+- Correo Electrónico: user@example.com
+- Contraseña: password123
+
+
+## Algunas imágenes del proyecto funcionando
+
+- Dashboard con sesión de Organizador.
+![img_2.png](img_2.png)
+
+- Lista de Asistentes.
+![img_4.png](img_4.png)
+
+- Creación y administeación de eventos.
+![img_3.png](img_3.png)
+
+- Envío de correo después de hacer la compra.
+![img_1.png](img_1.png)
+
+- Crear nuevo evento.
+![img_5.png](img_5.png)
+
+- Dashboard Principal
+![img_6.png](img_6.png)
+
+- Vista de Inicio de Sesión
+![img_7.png](img_7.png)
+
+- Vista de Crear una cuenta nueva.
+![img_8.png](img_8.png)
+
+- Vista de Crear una cuenta nueva.
+![img_9.png](img_9.png)
+
+- Dashboard con sesión de Usuario o Asistente.
+![img_10.png](img_10.png)
+
+- Sesión como usuario, puedes revisar los boletos que compraste referente al evento y ver sus detalles.
+![img_11.png](img_11.png)
+
+- Sesión como usuario, puedes revisar los eventos publicados por organizadores.
+![img_12.png](img_12.png)
+
+- Sesión como usuario, puedes ingresar a los eventos, comprar boletos e incluso dejar un comentario sobre el evento.
+![img_13.png](img_13.png)
