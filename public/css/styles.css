@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+}
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    color: #007bff;
+}
+
+a.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+a.btn-outline-secondary {
+    color: #333;
+    border-color: #ccc;
+}
+
+a.btn:hover {
+    text-decoration: none;
+}
+
